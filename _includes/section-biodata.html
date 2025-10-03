@@ -11,9 +11,9 @@
     <div class="container grid {{ grid_class }}">
         {% if page.url != '/' %}
         <div class="bio-image">
-            <!-- <img src="assets/images/biodata.jpg" alt="my bio data image"> -->
+            <!-- <img src="{{ 'assets/images/biodata.jpg' | relative_url }}" alt="my bio data image"> -->
             <!-- with the lazy loading -->
-            <img src="assets/images/hero.jpg" alt="my bio data image" data-src="assets/images/hero.jpg" fetchpriority="high" width="400" class="lazy-img">
+            <img src="{{ 'assets/images/hero.jpg' | relative_url }}" alt="my bio data image" data-src="{{ 'assets/images/hero.jpg' | relative_url }}" fetchpriority="high" width="400" class="lazy-img" loading="lazy">
         </div>
         {% endif %}
 
@@ -32,51 +32,51 @@
 
                 <div class="skills-items">
                     <div class="skill-item">
-                        <img src="assets/images/skills/magento-original.svg" width="60" height="60" class="skill-icon"
-                            alt="Magento">
+                        <img src="{{ 'assets/images/skills/magento-original.svg' | relative_url }}" width="60" height="60" class="skill-icon"
+                            alt="Magento" loading="lazy">
                         <h3 class="skill-name">Magento</h3>
                     </div>
 
                     <div class="skill-item">
-                        <img src="assets/images/skills/php-original.svg" width="60" height="60" class="skill-icon" alt="Php">
+                        <img src="{{ 'assets/images/skills/php-original.svg' | relative_url }}" width="60" height="60" class="skill-icon" alt="Php" loading="lazy">
                         <h3 class="skill-name">Php</h3>
                     </div>
 
                     <div class="skill-item">
-                        <img src="assets/images/skills/html5-original.svg" width="60" height="60" class="skill-icon" alt="HTML">
+                        <img src="{{ 'assets/images/skills/html5-original.svg' | relative_url }}" width="60" height="60" class="skill-icon" alt="HTML" loading="lazy">
                         <h3 class="skill-name">HTML5</h3>
                     </div>
                     <div class="skill-item">
-                        <img src="assets/images/skills/css3-original.svg" width="60" height="60" class="skill-icon" alt="CSS">
+                        <img src="{{ 'assets/images/skills/css3-original.svg' | relative_url }}" width="60" height="60" class="skill-icon" alt="CSS" loading="lazy">
                         <h3 class="skill-name">CSS3</h3>
                     </div>
                     <div class="skill-item">
-                        <img src="assets/images/skills/javascript-original.svg" width="60" height="60" class="skill-icon"
-                            alt="JavaScript">
+                        <img src="{{ 'assets/images/skills/javascript-original.svg' | relative_url }}" width="60" height="60" class="skill-icon"
+                            alt="JavaScript" loading="lazy">
                         <h3 class="skill-name">JavaScript</h3>
                     </div>
                     <div class="skill-item">
-                        <img src="assets/images/skills/jquery-original.svg" width="60" height="60" class="skill-icon" alt="JQuery">
+                        <img src="{{ 'assets/images/skills/jquery-original.svg' | relative_url }}" width="60" height="60" class="skill-icon" alt="JQuery" loading="lazy">
                         <h3 class="skill-name">JQuery</h3>
                     </div>
 
                     <div class="skill-item">
-                        <img src="assets/images/skills/react-original.svg" width="60" height="60" class="skill-icon" alt="React">
+                        <img src="{{ 'assets/images/skills/react-original.svg' | relative_url }}" width="60" height="60" class="skill-icon" alt="React" loading="lazy">
                         <h3 class="skill-name">React</h3>
                     </div>
                     <div class="skill-item">
-                        <img src="assets/images/skills/git-original.svg" class="skill-icon" width="60" height="60" alt="Git">
+                        <img src="{{ 'assets/images/skills/git-original.svg' | relative_url }}" class="skill-icon" width="60" height="60" alt="Git" loading="lazy">
                         <h3 class="skill-name">Git</h3>
                     </div>
 
                     {% if false %}
                     <div class="skill-item">
-                        <img src="assets/images/skills/mysql-original-wordmark.svg" class="skill-icon" width="60" alt="MySql">
+                        <img src="{{ 'assets/images/skills/mysql-original-wordmark.svg' | relative_url }}" class="skill-icon" width="60" alt="MySql" loading="lazy">
                         <h3 class="skill-name">MySql</h3>
                     </div>
 
                     <div class="skill-item">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg" class="skill-icon" width="60" alt="MySql">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg" class="skill-icon" width="60" alt="MySql" loading="lazy">
                         <h3 class="skill-name">MySql</h3>
                     </div>
                     {% endif %}

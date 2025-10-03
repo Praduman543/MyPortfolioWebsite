@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /assets/images/clients/
+Disallow: /assets/images/folio/
+Disallow: /assets/images/skills/
 
 Sitemap: https://praduman-pandey.github.io/sitemap.xml

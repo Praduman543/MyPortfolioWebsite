@@ -36,3 +36,8 @@ defaults:
       path: ""
     values:
       layout: "default"
+
+# --------------------------------------
+# ✅ Use pretty permalinks (e.g., /about/ instead of /about.html)
+# --------------------------------------
+permalink: pretty
